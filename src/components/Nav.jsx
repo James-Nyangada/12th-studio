@@ -13,7 +13,7 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const menuItems = ['ABOUT', 'SERVICES', 'PORTFOLIO', 'CONTACT'];
+  const menuItems = ['PORTFOLIO', 'SERVICES',  'CONTACT'];
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all pt-5 pb-5 duration-300 ${isScrolled ? 'bg-dirt shadow-md bg-opacity-15' : 'bg-transparent'}`}>
@@ -30,7 +30,7 @@ const Navbar = () => {
                 <a
                   key={item}
                   href={`/${item.toLowerCase().replace(' ', '-')}`}
-                  className="text-black-800 hover:text-black-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 relative group"
+                  className="text-black-800 hover:text-black-600 px-3 py-2 rounded-md text-md font-bold transition-colors duration-300 relative group"
                 >
                   {item}
                   <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-black-700 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-black-800 hover:text-black-600 font-bold focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             >
               <span className="sr-only">Toggle menu</span>
               {isOpen ? (

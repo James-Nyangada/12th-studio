@@ -4,11 +4,25 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Banner */}
-      <div className="relative h-[70vh] bg-[url('/public/workshop.webp')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-white text-5xl font-bold">CONTACT US</h1>
+      <div className="relative h-[70vh] w-full overflow-hidden">
+        <img
+          src="/image_4.webp"
+          alt="Hands holding a smartphone"
+          className="h-full w-full object-cover object-bottom"
+          
+        />
+        <div 
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(to right, rgba(230, 126, 34, 1) 0%, rgba(230, 126, 34, 0.8) 20%, rgba(230, 126, 34, 0.6) 40%, rgba(230, 126, 34, 0.4) 60%, rgba(230, 126, 34, 0.2) 80%, rgba(230, 126, 34, 0) 100%)',
+            mixBlendMode: 'multiply'
+          }}
+        ></div>
+        <div className="absolute bottom-5 left-10 z-10">
+          <h1 className="font-serif text-6xl font-light tracking-wide text-[#E8A589]">CONTACT ME</h1>
         </div>
       </div>
+
 
       {/* Contact Form and Map */}
       <div className="container mx-auto px-4 py-12">
@@ -50,7 +64,7 @@ export default function ContactPage() {
                 type="submit" 
                 className="w-full px-4 py-2 bg-[#f4a261] hover:bg-[#e76f51] text-white font-bold rounded-md transition duration-300 ease-in-out"
               >
-                Submit
+                SUBMIT
               </button>
             </form>
           </div>

@@ -1,93 +1,80 @@
-'use client'
-
-import React from 'react'
-
-import { motion } from 'framer-motion'
-import { image } from 'framer-motion/client'
+import React from 'react';
 
 export default function Component() {
-  const services = [
-    {
-      title: "Social Media Management & Curation",
-      description: "In this package, you get:",
-      bulletPoints: [
-        "Social Media Audits",
-        "Content Curation & Ideation",
-        "Content Design & Copy",
-        "Social Media Strategy",
-        "Post Analysis & Reporting",
-        "Content Shoot Coordination"
-      ],
-      investment: "Ksh 40,000 - 50,000 (Monthly)",
-      ctaText: "BOOK A DISCOVERY CALL",
-      image: 'image_1.webp'
-    },
-    {
-      title: "Consultations",
-      description: "Consultation sessions cover strategic and tactical questions that you have about Social Media.",
-      investment: "Ksh 3,000 (Per Hour)",
-      ctaText: "SCHEDULE A CONSULTATION",
-      image: 'image_2.webp'
-    },
-    {
-      title: "Coaching and Curation",
-      description: "Personalized coaching sessions to enhance your skills and curated resources to keep you at the forefront of industry trends. Empower yourself with knowledge and practical insights.",
-      ctaText: "START YOUR JOURNEY",
-      image: 'image_3.webp'
-    }
-  ]
-
   return (
     <>
-    <div className="relative h-[70vh] bg-[url('/public/workshop.webp')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-white text-5xl font-bold">SERVICE</h1>
+    <div className="relative h-[70vh] w-full overflow-hidden">
+  <img
+    src="/A7309362.jpg"
+    alt="Hands holding a smartphone"
+    className="h-full w-full object-cover object-bottom"
+    
+  />
+  <div 
+    className="absolute inset-0"
+    style={{
+      background: 'linear-gradient(to right, rgba(230, 126, 34, 1) 0%, rgba(230, 126, 34, 0.8) 20%, rgba(230, 126, 34, 0.6) 40%, rgba(230, 126, 34, 0.4) 60%, rgba(230, 126, 34, 0.2) 80%, rgba(230, 126, 34, 0) 100%)',
+      mixBlendMode: 'multiply'
+    }}
+  ></div>
+  <div className="absolute bottom-5 left-10 z-10">
+    <h1 className="font-serif text-6xl font-light tracking-wide text-[#E8A589]">SERVICES</h1>
+  </div>
+</div>
+
+    
+    <div className="max-w-4xl mx-auto px-4 mt-[60px] mb-[60px]">
+      <div className="space-y-12">
+        <div className="flex flex-col md:flex-row gap-8">
+          <img src="/A7309662.jpg" alt="Hands typing on laptop" className="w-full md:w-1/2 object-cover" />
+          <div className="flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl font-bold mb-4">Social Media Management & Curation</h2>
+              <p className="mb-4">In this package, you get;</p>
+              <ul className="list-disc pl-5 mb-4">
+                <li>Social Media Audits</li>
+                <li>Content Curation & Ideation</li>
+                <li>Content Design & Copy</li>
+                <li>Social Media Strategy</li>
+                <li>Post Analysis & Reporting</li>
+                <li>Content Shoot Coordination</li>
+              </ul>
+              <p className="font-semibold mb-2">INVESTMENT:</p>
+              <p className="text-xl font-bold mb-4">Ksh 40,000 - 50,000 (Monthly)</p>
+            </div>
+            <button className="border-2 border-[#e67e22] text-black hover:bg-[#e67e22] hover:text-white transition ease-in duratation-300 px-6 py-2 w-full md:w-auto">BOOK A DISCOVERY CALL</button>
+          </div>
+        </div>
+
+        <hr className="border-gray-300" />
+
+        <div className="flex flex-col md:flex-row gap-8">
+          <img src="/A7309870.jpg" alt="Person talking on phone" className="w-full md:w-1/2 object-cover" />
+          <div className="flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl font-bold mb-4">Consultations</h2>
+              <p className="mb-4">Consultation sessions cover strategic and tactical questions that you have about Social Media.</p>
+              <p className="font-semibold mb-2">INVESTMENT:</p>
+              <p className="text-xl font-bold mb-4">Ksh 3,000 (Per Hour)</p>
+            </div>
+            <button className="border-2 border-[#e67e22] text-black hover:bg-[#e67e22] hover:text-white transition ease-in duratation-300 px-6 py-2 w-full md:w-auto">BOOK A SESSION</button>
+          </div>
+        </div>
+
+        <hr className="border-gray-300" />
+
+        <div className="flex flex-col md:flex-row gap-8">
+          <img src="/A7309610 (1).jpg" alt="Person holding clipboard" className="w-full  md:w-1/2 object-cover" />
+          <div className="flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl font-bold mb-4">Coaching & Workshops</h2>
+              <p className="mb-4">I coach beginner Social Media Managers through my collaborative Social Media Management Course and facilitate Social Media Workshops for organizations on a contractual basis.</p>
+            </div>
+            <button className="border-2 border-[#e67e22] text-black hover:bg-[#e67e22] hover:text-white transition ease-in duratation-300 px-6 py-2 w-full md:w-auto">GET QUOTE</button>
+          </div>
         </div>
       </div>
-    <div className="container mx-auto px-4 py-8 space-y-16">
-      {services.map((service, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: index * 0.2 }}
-        >
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2">
-              <img
-                src={service.image}
-                alt={service.title}
-                width={500}
-                height={300}
-                className="rounded-lg w-[400px] h-[500px]"
-              />
-            </div>
-            <div className="md:w-1/2">
-              <h2 className="text-2xl font-bold mb-4">{service.title}</h2>
-              <p className="mb-4">{service.description}</p>
-              {service.bulletPoints && (
-                <ul className="list-disc list-inside mb-4">
-                  {service.bulletPoints.map((point, i) => (
-                    <li key={i}>{point}</li>
-                  ))}
-                </ul>
-              )}
-              {service.investment && (
-                <>
-                  <p className="font-semibold">INVESTMENT:</p>
-                  <p className="mb-4">{service.investment}</p>
-                </>
-              )}
-              <button className="bg-transparent border border-[#e67e22] text-black px-6 py-2 rounded transition-colors duration-300 ease-in-out hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
-                {service.ctaText}
-              </button>
-            </div>
-          </div>
-          {index < services.length - 1 && <hr className="border-t border-gray-300 mt-8" />}
-        </motion.div>
-      ))}
     </div>
     </>
-  )
+  );
 }

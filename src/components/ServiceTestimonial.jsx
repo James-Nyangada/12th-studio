@@ -24,9 +24,12 @@ export default function Component() {
         ))}
       </div>
       <div className="flex justify-end mb-12">
-        <button className="bg-[#e68e5d] text-white px-6 py-3 rounded-lg font-semibold uppercase text-sm">
+      <a href='/contact'>
+      <button className="bg-[#e68e5d] text-white px-6 py-3 rounded-lg font-semibold uppercase text-sm">
           Get in touch
         </button>
+      </a>
+        
       </div>
       <div className="flex flex-col items-center">
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#e68e5d] mb-4">

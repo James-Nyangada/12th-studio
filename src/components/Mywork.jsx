@@ -1,14 +1,12 @@
 import React from 'react';
 
 const PortfolioItem = ({ image, title, description, readMoreLink }) => (
-  <div style={{ display: 'flex', marginBottom: '30px', alignItems: 'flex-start' }}>
-    <img src={image} alt={title} style={{ width: '300px', height: '300px', objectFit: 'cover', marginRight: '25px' }} />
+  <div style={{ display: 'flex', marginBottom: '30px', alignItems: 'center',}} className='flex-column-sm'>
+    <img src={image} alt={title} style={{ width: '400px', height: '380px', objectFit: 'cover', marginRight: '25px' }} />
     <div style={{ flex: 1 }}>
       <h2 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '10px' }}>{title}</h2>
       <p style={{ fontSize: '16px', marginBottom: '10px', lineHeight: '1.4' }}>{description}</p>
-      <a href={readMoreLink} style={{ color: '#ff6b35', textDecoration: 'none', fontSize: '16px' }}>
-        Read More →
-      </a>
+      
     </div>
   </div>
 );
@@ -97,7 +95,7 @@ const Portfolio = () => (
       description="Kenyan based Burundian Musician who needed Social Media Management."
       readMoreLink="#"
     />
-    <LoadMoreButton  />
+    {/* <LoadMoreButton  /> */}
   </div>
   </>
 );

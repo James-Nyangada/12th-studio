@@ -42,7 +42,10 @@ export default function Component() {
               <p className="font-semibold mb-2">INVESTMENT:</p>
               <p className="text-xl font-bold mb-4">Ksh 40,000 - 50,000 (Monthly)</p>
             </div>
+            <a href='/contact'>
             <button className="border-2 border-[#e67e22] text-black hover:bg-[#e67e22] hover:text-white transition ease-in duratation-300 px-6 py-2 w-full md:w-auto">BOOK A DISCOVERY CALL</button>
+            </a>
+            
           </div>
         </div>
 
@@ -57,20 +60,26 @@ export default function Component() {
               <p className="font-semibold mb-2">INVESTMENT:</p>
               <p className="text-xl font-bold mb-4">Ksh 3,000 (Per Hour)</p>
             </div>
+            <a href='/contact'>
             <button className="border-2 border-[#e67e22] text-black hover:bg-[#e67e22] hover:text-white transition ease-in duratation-300 px-6 py-2 w-full md:w-auto">BOOK A SESSION</button>
+            </a>
+            
           </div>
         </div>
 
         <hr className="border-gray-300" />
 
         <div className="flex flex-col md:flex-row gap-8">
-          <img src="/A7309610 (1).jpg" alt="Person holding clipboard" className="w-full  md:w-1/2 object-cover" />
+          <img src="/Screenshot_18-10-2024_212536_.jpeg" alt="Person holding clipboard" className="w-full  md:w-1/2 object-cover" />
           <div className="flex flex-col justify-between">
             <div>
               <h2 className="text-3xl font-bold mb-4">Coaching & Workshops</h2>
               <p className="mb-4">I coach beginner Social Media Managers through my collaborative Social Media Management Course and facilitate Social Media Workshops for organizations on a contractual basis.</p>
             </div>
-            <button className="border-2 border-[#e67e22] text-black hover:bg-[#e67e22] hover:text-white transition ease-in duratation-300 px-6 py-2 w-full md:w-auto">GET QUOTE</button>
+            <a href='/contact'>
+              <button className="border-2 border-[#e67e22] text-black hover:bg-[#e67e22] hover:text-white transition ease-in duratation-300 px-6 py-2 w-full md:w-auto">GET QUOTE</button>
+            </a>
+            
           </div>
         </div>
       </div>

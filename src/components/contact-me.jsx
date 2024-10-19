@@ -1,6 +1,21 @@
 import React from 'react'
+import { useRef } from 'react'
+import emailjs from 'emailjs-com'
 
 export default function ContactPage() {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_uk9zttx', 'template_ykv7min', form.current, 'LKYT2ZF4AGUC6nwTf')
+      .then((result) => {
+        console.log('Email sent successfully:', result.text);
+        e.target.reset();
+      }, (error) => {
+        console.error('Error sending email:', error);
+        alert('An error occurred. Please try again later.');
+      });
+  };
   return (
     <div className="min-h-screen bg-white">
       {/* Banner */}
@@ -26,10 +41,10 @@ export default function ContactPage() {
 
       {/* Contact Form and Map */}
       <div className="container mx-auto px-4 py-12">
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="md:flex-row gap-8">
           {/* Contact Form */}
           <div className="w-full md:w-1/2">
-            <form className="space-y-6">
+            <form className="space-y-6" ref={form} onSubmit={sendEmail}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
                 <input 
@@ -70,19 +85,7 @@ export default function ContactPage() {
           </div>
 
           {/* Google Maps Placeholder */}
-          <div className="w-full md:w-1/2">
-            <div className="h-96 bg-gray-300 rounded-lg overflow-hidden">
-              {/* Replace this div with an actual Google Maps embed */}
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968482413!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1635266738000!5m2!1sen!2sus"
-                width="100%" 
-                height="100%" 
-                style={{border:0}} 
-                allowFullScreen="" 
-                loading="lazy"
-              ></iframe>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>

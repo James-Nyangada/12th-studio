@@ -48,14 +48,17 @@ const ServicesSection = () => {
           />
         </div>
         <div className="mt-12 text-center">
+        <a href='/contact'>
           <motion.button
-            className="bg-[#e67e22] text-white px-8 py-3 rounded-full text-lg font-semibold"
-            whileHover={{ scale: 1.05, backgroundColor: '#d35400' }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ duration: 0.2 }}
-          >
-            Get in touch
-          </motion.button>
+              className="bg-[#e67e22] text-white px-8 py-3 rounded-full text-lg font-semibold"
+              whileHover={{ scale: 1.05, backgroundColor: '#d35400' }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.2 }}
+            >
+              Get in touch
+            </motion.button>
+        </a>
+          
         </div>
       </div>
       <div 

@@ -32,7 +32,7 @@ export default function Home() {
         {/* Main Text */}
         <div className="text-white">
           <h2 className="text-2xl mb-2">THE TWELFTH STUDIO</h2>
-          <h1 className="text-6xl font-thin tracking-wider text-[#e67e22]" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h1 className="text-5xl font-thin tracking-wider text-[#e67e22]" style={{ fontFamily: "'Playfair Display', serif" }}>
             SOCIAL MEDIA CONSULTANT
           </h1>
         </div>

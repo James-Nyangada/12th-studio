@@ -62,7 +62,7 @@ const Navbar = () => {
           {menuItems.map((item, index) => (
             <a
               key={item}
-              href={`#${item.toLowerCase().replace(' ', '-')}`}
+              href={`/${item.toLowerCase().replace(' ', '-')}`}
               className={`text-gray-800 hover:text-gray-600 block px-3 py-2 rounded-md text-base font-medium text-center transition-all duration-300 ease-in-out ${
                 isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
               }`}

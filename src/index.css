@@ -24,3 +24,16 @@
   src: url("../public/fonts/DroidSerif-Regular.ttf");
   font-display: swap;
 }
+.flex-column-sm {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .flex-column-sm {
+    flex-direction: row;
+  }
+}

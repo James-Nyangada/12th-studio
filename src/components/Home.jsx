@@ -1,6 +1,5 @@
 import React from 'react';
-import AboutMe from './about-me';
-import Service from './ServiceTestimonial'
+
 
 
 export default function Home() {
@@ -38,8 +37,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <AboutMe/>
-    <Service/>
+
     
     </>
   );

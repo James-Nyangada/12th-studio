@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, MenuIcon, X, XIcon } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,7 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const menuItems = ['PORTFOLIO', 'SERVICES',  'CONTACT'];
+  const menuItems = ['ABOUT','PORTFOLIO', 'SERVICES',  'CONTACT'];
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all pt-5 pb-5 duration-300 ${isScrolled ? 'bg-dirt shadow-md bg-opacity-15' : 'bg-transparent'}`}>
@@ -38,14 +38,14 @@ const Navbar = () => {
               ))}
             </div>
           </div>
-          <div className="md:hidden">
+          <div className="md:hidden z-50">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-black-800 hover:text-black-600 font-bold focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center  justify-center p-2 rounded-md text-black-800 hover:text-black-600 font-bold focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             >
               <span className="sr-only">Toggle menu</span>
               {isOpen ? (
-                <X className="block h-6 w-6" aria-hidden="true" />
+                <XIcon className="block h-6 w-6" aria-hidden="true" />
               ) : (
                 <Menu className="block h-6 w-6" aria-hidden="true" />
               )}

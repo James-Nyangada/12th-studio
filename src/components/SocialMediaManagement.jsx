@@ -18,12 +18,12 @@ export default function SocialMediaManagement() {
             <p className="lg:text-3xl mb-8 leading-relaxed md:text-base sm:text-sm ml-10">
               In this package, you get:
               <ul className="list-disc ml-4 mb-4">
-                <li>Social Media Audits</li>
-                <li>Content Curation & Ideation</li>
-                <li>Content Design & Copy</li>
-                <li>Social Media Strategy</li>
-                <li>Post Analysis & Reporting</li>
-                <li>Content Shoot Coordination</li>
+                <li>Month on Month Social media Idea curation</li>
+                <li>Content and Platform strategy</li>
+                <li>Posting and Scheduling based on agreed cadence</li>
+                <li>Monthly social media and analytics report</li>
+                <li>Post Captioning</li>
+                <li>DM and comments Management</li>
               </ul>
             </p>
             <p className="text-dirt lg:text-2xl">

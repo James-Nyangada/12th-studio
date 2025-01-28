@@ -11,6 +11,9 @@ import Consultations from "./components/Consultations";
 import Coaching from "./components/Coaching";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
+import SocialMedia from "./components/SocialMedia";
+import Consultancy from "./components/Consultancy";
+import CoachingTraining from "./components/CoachingTraining";
 
 function App() {
   return (
@@ -29,6 +32,9 @@ function App() {
         <Route path="/portfolio" element={<MyWork />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/social-media" element={<SocialMedia/>} />
+        <Route path="/consultations" element={<Consultancy/>} />
+        <Route path="/coaching-and-training" element={<CoachingTraining/>} />
       </Routes>
       <Footer/>
     </>

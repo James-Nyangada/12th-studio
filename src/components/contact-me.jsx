@@ -34,7 +34,7 @@ export default function ContactPage() {
           }}
         ></div>
         <div className="absolute bottom-5 left-10 z-10">
-          <h1 className="font-serif text-6xl font-light tracking-wide text-[#E8A589]">CONTACT ME</h1>
+          <p className="font-[Cinzel] text-7xl font-[100] font-light text-white">CONTACT US</p>
         </div>
       </div>
 
@@ -77,7 +77,7 @@ export default function ContactPage() {
               </div>
               <button 
                 type="submit" 
-                className="w-full px-4 py-2 bg-[#f4a261] hover:bg-[#e76f51] text-white font-bold rounded-md transition duration-300 ease-in-out"
+                className="px-[60px] py-3 bg-[#f4a261] text-[20px] hover:bg-[#e76f51] text-white font-bold tracking-widest transition duration-300 ease-in-out"
               >
                 SUBMIT
               </button>
